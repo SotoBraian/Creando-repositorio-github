@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagenes/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body class="contenedor-grid">
+    <!-- navegacion -->
+    <header class="contenedor-nav">
+        <nav class="nav">
+            <a href="index.html">
+                <img src="imagenes/logo.jpg" alt="logo" class="logo">
+            </a>
+            <ul class="contenedor-menu">
+                <li>
+                    <a href="">Inicio</a>
+                </li>
+                <li>
+                    <a href="">Sobre Mi</a>
+                </li>
+                <li>
+                    <a href="">Mis Habilidades</a>
+                </li>
+                <li>
+                    <a href="">Proyectos</a>
+                </li>
+                <li>
+                    <a href="">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <Main>
+        <!-- portada -->
+        <Section>
+            <img src="imagenes/portada.jpg" alt="portada" class="portada">
+            <div class="titulo-principal"data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+                <h4 class="titulo-a"> < </h4>
+                <h1 class="titulo-b" >Braian S. <br> Desarrollador web </h1>
+                <h4 class="titulo-c"> /> </h4>
+            </div>
+        </Section>
+        <!-- Sobre mi -->
+        <section>
+            <div class="contenedor-grid-sobre-mi">
+                <h2 class="titulo-sobre-mi">Sobre Mi</h2>
+                <div class="contenedor-texto-imagen"data-aos="zoom-out" data-aos-duration="1500" >
+                    <p class="texto">
+                        Me llamo Braian Soto, naci en la Provincia de Buenos Aires.
+                        Estudie en la primaria en escuela media y luego en 4to año de la secundaria me pase a una
+                        escuela tecnica por lo que me recibi de Tecnico Electromecanico a los 18 años. Ademas cuento con
+                        segundo año en la Tecnicatura de Seguridad Publica y Ciudadana con orientacion en tecnologias de
+                        la informacion y comunicacion policiales.
+                        Por otro lado, incie en el mundo de la programacion en el año 2022, primero como autodidacta,
+                        luego incie un curso el mismo año en CoderHouse de Desarrollador Fronted Angular. Siendo mi
+                        objetivo princial para el presente año 2022 convertirme en desarrollador Full Stack.
+                    </p>
+                    <img src="imagenes/mi-foto.jpeg" alt="mi-foto" class="mi-foto">
+                </div>
+            </div>
+        </section>
+        <!-- mis habilidades -->
+        <section>
+            <h2 class="titulo-mis-habilidades">Mis Habilidades</h2>
+            <div class="contenedor-mis-habilidades" >
+                <img src="imagenes/html.jpg" alt="Html" class="html">
+                <img src="imagenes/css.jpg" alt="Css" class="css">
+                <img src="imagenes/an.jpg" alt="Angular" class="angular">
+                <img src="imagenes/js.jpg" alt="Javascript" class="javascript">
+            </div>
+        </section>
+        <!-- contacto -->
+        <section>
+            <h2 class="titulo-contacto">Contacto</h2>
+            <div class="contenedor-contacto">
+                <form action="/formulario.php" method="post" class="formulario">
+                    <label for="Nombre" class="nombre">Nombre</label>
+                    <input type="text" id="Nombre" placeholder="Nombre" class="cuadro-nombre">
+                    <br>
+                    <Label for="Email" class="email"> Email</Label>
+                    <input type="email" name="Email" id="Email" placeholder="HelloWorld@gmail.com" class="cuadro-email">
+                    <br>
+                    <div class="contenedor-comentario">
+                        <label for="comentario" class="comentario">Comentario</label>
+                        <br>
+                        <textarea name="Comentario" id="Comentario" cols="30" rows="10" placeholder="Ingrese comentario"
+                            class="cuadro-comentario"></textarea>
+                    </div>
+                    <input type="submit" class="submit">
+                </form>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104990.5379829306!2d-58.82357459581124!3d-34.681102550855634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc95434093dd6b%3A0x58d832f755e4a278!2sMerlo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1651090573710!5m2!1ses-419!2sar"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+            </div>
+        </section>
+    </Main>
+    <!-- pie de pagina -->
+    <footer>
+        <h3>Redes Sociales</h3>
+        <a href="https://wa.me/541122948439" target="_blanck">
+            <img src="imagenes/whatsapp.png" alt="whatsapp">
+        </a>
+        <a href="https://www.instagram.com/soto_braian_/" target="_blanck">
+            <img src="imagenes/instagram.png" alt="instagram">
+        </a>
+        <a href="https://twitter.com/Braian34409221?t=QmSFfVSSw5HLrFpmr4dBag&s=09" target="_blanck">
+            <img src="imagenes/twitter.png" alt="twitter">
+        </a>
+        <a href="https://t.me/Braian_S_M" target="_blanck">
+            <img src="imagenes/telegram.png" alt="telegram">
+        </a>
+    </footer>
+    <!-- script js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
