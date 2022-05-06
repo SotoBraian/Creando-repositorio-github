@@ -15,7 +15,7 @@ body {
 }
 
 /*        navegador          */
-.contenedor-nav {
+/* .contenedor-nav {
     width: 100%;
     position: sticky;
     top: 0;
@@ -48,15 +48,38 @@ a:hover{
     transform: all;
     transition: 1s;
     font-size: 18px;
+} */
+/* .nav{
+    display: flex;
+    align-items: center;
+    border: solid 3px red;
+} */
+.contenedor-nav{
+    position: sticky;
+    top: 0;
+    height: 100px;
+    z-index: 2;
 }
-
+.color{
+    height: 60px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.5298494397759104) 0%, rgba(2,43,88,0.5522584033613445) 8%, rgba(1,105,163,1) 61%, rgba(0,181,255,0.5186449579831933) 100%);
+}
+.contenedor-logo-menu{
+    display: flex;
+    align-items: center;
+        
+}
+.contenedor-menu{
+    margin-right: 100px;
+}
 /* logo */
 .logo {
-    height: 100px;
-    width: 100px;
+    height: 80px;
     margin-left: 80px;
+    margin-top: 0;
+    /* position: absolute; */
 }
-
 /* portada */
 .portada {
     height: 100%;
@@ -68,7 +91,7 @@ a:hover{
 }
 
 .titulo-principal {
-    width: 90%;
+    width: 100%;
     margin: auto;
     margin-top: 100px;
     display: flex;
@@ -202,7 +225,7 @@ a:hover{
 .nombre {
     font-size: 20px;
     color: white;
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
 .email {
@@ -213,7 +236,7 @@ a:hover{
 .comentario {
     font-size: 20px;
     color: white;
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
 .cuadro-nombre {
@@ -234,11 +257,6 @@ a:hover{
     -moz-box-shadow: 6px 6px 5px -1px rgba(255, 255, 255, 1);
     box-shadow: 6px 6px 5px -1px rgba(255, 255, 255, 1);
 }
-
-.contenedor-comentario {
-    margin-top: 20px;
-}
-
 .submit {
     width: 70px;
     -webkit-box-shadow: 6px 6px 5px -1px rgba(255, 255, 255, 1);
@@ -247,10 +265,12 @@ a:hover{
 }
 
 .mapa {
+    margin-top: 15px;
     -webkit-box-shadow: 0px 3px 5px 8px rgba(255, 255, 255, 1);
     -moz-box-shadow: 0px 3px 5px 8px rgba(255, 255, 255, 1);
     box-shadow: 0px 3px 5px 8px rgba(255, 255, 255, 1);
 }
+/* footer */
 .contenedor-footer{
     display: grid;
     grid-template-columns: 1fr;
@@ -263,7 +283,7 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 40px;
+    font-size: 25px;
     color: white;
 }
 .contenedor-redes{
@@ -273,7 +293,7 @@ a:hover{
     justify-content: space-around;
 }
 .whatsapp{
-    width: 50px;
+    width: 40px;
 }
 .whatsapp:hover{
     transform: all;
@@ -281,7 +301,7 @@ a:hover{
     transform: scale(1.2);
 }
 .instagram{
-    width: 50px;
+    width: 40px;
 }
 .instagram:hover{
     transform: all;
@@ -289,7 +309,7 @@ a:hover{
     transform: scale(1.2);
 }
 .twitter{
-    width: 50px;
+    width: 40px;
 }
 .twitter:hover{
     transform: all;
@@ -297,10 +317,55 @@ a:hover{
     transform: scale(1.2);
 }
 .telegram{
-    width: 50px;
+    width: 40px;
 }
 .telegram:hover{
     transform: all;
     transition: 1s;
     transform: scale(1.2);
+}
+/* ---------------------------------Sobre Mi------------------------------------------------------------- */
+.titulo-sobre-mi-b{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 50px;
+    color: white;
+}
+.contenedor-texto-imagen-b{
+    width: 70%;
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    background-color: rgb(0, 159, 170);
+    -webkit-box-shadow: 0px 3px 5px 8px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 3px 5px 8px rgba(255, 255, 255, 1);
+    box-shadow: 0px 3px 5px 8px rgba(255, 255, 255, 1);
+}
+/* ----------------------------------------Mis Habilidades--------------------------------------------------- */
+.mis-habilidades-b{
+    font-size: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.contenedor-mis-habilidades-b{
+    width: 80%;
+    margin: auto;
+}
+.titulo-html-b{
+    font-size: 30px;
+    color: rgb(236, 185, 88);
+}
+.titulo-css-b{
+    
+    color: rgb(76, 76, 235);
+}
+.titulo-javascript-b{
+    color: rgb(252, 252, 33);
+}
+.titulo-angular-b{
+    color: rgb(206, 94, 94);
 }
