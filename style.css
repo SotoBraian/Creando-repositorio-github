@@ -11,7 +11,7 @@ body {
 .contenedor-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-columns: repeat(3, fr);
+    grid-template-columns: 1fr, 1fr, 1fr;
 }
 
 /*        navegador          */
@@ -67,11 +67,16 @@ a:hover{
 }
 .contenedor-logo-menu{
     display: flex;
-    align-items: center;
-        
+    align-items: center;       
 }
 .contenedor-menu{
     margin-right: 100px;
+}
+.navegacion{
+    background-color: rgb(42, 49, 129);
+}
+.hola{
+    background-color: black;
 }
 /* logo */
 .logo {
@@ -89,7 +94,6 @@ a:hover{
     position: absolute;
     top: 0%;
 }
-
 .titulo-principal {
     width: 100%;
     margin: auto;
@@ -123,18 +127,13 @@ a:hover{
     display: flex;
     justify-content: center;
 }
-
-.contenedor-grid-sobre-mi {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
 .contenedor-texto-imagen {
     width: 70%;
     margin: auto;
+    margin-top: 60px;
     display: flex;
-    background-color: rgb(0, 159, 170);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.5298494397759104) 0%, rgba(2,43,88,0.5522584033613445) 8%, rgba(1,105,163,1) 61%, rgba(0,181,255,0.5186449579831933) 100%);
     -webkit-box-shadow: 0px 3px 5px 8px rgba(255, 255, 255, 1);
     -moz-box-shadow: 0px 3px 5px 8px rgba(255, 255, 255, 1);
     box-shadow: 0px 3px 5px 8px rgba(255, 255, 255, 1);
@@ -147,7 +146,11 @@ a:hover{
     margin-left: 20px;
     text-align: justify;
 }
-
+.texto::selection{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.5298494397759104) 0%, rgba(2,43,88,0.5522584033613445) 8%, rgba(1,105,163,1) 61%, rgba(0,181,255,0.5186449579831933) 100%);
+    color: black;
+}
 .mi-foto {
     height: 300px;
     position: relative;
@@ -275,9 +278,10 @@ a:hover{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    border: solid 3px rgb(12, 65, 124);
     margin-top: 100px;
     row-gap: 30px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.5298494397759104) 0%, rgba(2,43,88,0.5522584033613445) 8%, rgba(1,105,163,1) 61%, rgba(0,181,255,0.5186449579831933) 100%);
 }
 .titulo-redes-sociales{
     display: flex;
@@ -291,38 +295,23 @@ a:hover{
     margin: auto;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 15px;
+}
+footer div a:hover{
+    transition: 1s;
+    transform: scale(1.2);
 }
 .whatsapp{
     width: 40px;
 }
-.whatsapp:hover{
-    transform: all;
-    transition: 1s;
-    transform: scale(1.2);
-}
 .instagram{
     width: 40px;
-}
-.instagram:hover{
-    transform: all;
-    transition: 1s;
-    transform: scale(1.2);
 }
 .twitter{
     width: 40px;
 }
-.twitter:hover{
-    transform: all;
-    transition: 1s;
-    transform: scale(1.2);
-}
 .telegram{
     width: 40px;
-}
-.telegram:hover{
-    transform: all;
-    transition: 1s;
-    transform: scale(1.2);
 }
 /* ---------------------------------Sobre Mi------------------------------------------------------------- */
 .titulo-sobre-mi-b{
@@ -368,4 +357,41 @@ a:hover{
 }
 .titulo-angular-b{
     color: rgb(206, 94, 94);
+}
+/* ----------------------------------------------Media Queries----------------------------------------------------- */
+@media  screen and (max-width:576px) {
+    /* portada */
+    .portada{
+        width: 110%;
+        height: 100%;
+    }
+    .titulo-principal{
+        display: flex;
+        justify-content: center;
+    }
+    .titulo-sobre-mi{
+        margin-top: 170px;
+    }
+    /* sobre mi */
+    .contenedor-texto-imagen{
+        display: flex;
+        flex-direction: column;
+    }
+    .texto{
+        margin-right: 10px;
+    }
+    .mi-foto{
+        margin-left: 50px;
+        height: 400px;
+        width: 300px;
+    }
+    /* contacto */
+    .contenedor-contacto{
+        display: flex;
+        flex-direction: column;
+    }
+    .mapa{
+        margin: auto;
+        margin-top: 80px;
+    }
 }
