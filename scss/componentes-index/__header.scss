@@ -1,0 +1,30 @@
+header{
+    position: sticky;
+    top: 0;
+    height: 100px;
+    z-index: 2;
+    nav{
+        height: 60px;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,0.5298494397759104) 0%, rgba(2,43,88,0.5522584033613445) 8%, rgba(1,105,163,1) 61%, rgba(0,181,255,0.5186449579831933) 100%);
+        div{
+            display: flex;
+            align-items: center; 
+            a{
+                img{
+                    height: 80px;
+                    margin-left: 80px;
+                    margin-top: 0;
+                }
+            }
+            div{
+                div{
+                    margin-right: 100px;
+                    a{
+
+                    }
+                }
+            }
+        }
+    }
+}

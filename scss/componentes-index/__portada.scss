@@ -1,0 +1,68 @@
+
+    section{
+        .portada{
+            height: 100%;
+            width: 100%;
+            margin: auto;
+            z-index: -1;
+            position: absolute;
+            top: 0%;
+        }
+        .titulo-principal{
+            width: 100%;
+            margin: auto;
+            margin-top: 100px;
+            display: flex;
+            justify-content: end;
+            .titulo-a{
+                font-size: 70px;
+                color: dodgerblue;
+            }
+            .titulo-b{
+                font-size: 70px;
+                color: white;
+            }
+            .titulo-c{
+                font-size: 70px;
+                color: dodgerblue;
+                display: flex;
+                align-items: flex-end;
+            }
+        }
+    }
+    
+//     section{
+//         .titulo-mis-habilidades{
+//             font-size: 50px;
+//             color: white;
+//             margin-top: 100px;
+//             display: flex;
+//             justify-content: center;
+//         }
+//         div{
+//             display: grid;
+//             grid-template-columns: 1fr 1fr;
+//             grid-template-rows: repeat(1, fr);
+//             width: 600px;
+//             margin: auto;
+//             row-gap: 15px;
+//             column-gap: 10px;
+//             margin-top: 50px;
+//             .html{
+//                 width: 300px;
+//                 height: 150px;
+//             }
+//             .css{
+//                 width: 300px;
+//                 height: 150px;
+//             }
+//             .angular{
+//                 width: 300px;
+//                 height: 150px;
+//             }
+//             .javascript{
+//                 width: 300px;
+//                 height: 150px;
+//             }
+//         }
+//     }
