@@ -1,0 +1,38 @@
+section{
+    .contenedor-sobre-mi{
+        .titulo-sobre-mi{
+            color: white;
+            @include display(flex, center);
+            font-size: 50px;
+            margin-top: 130px;
+            margin-bottom: 100px;
+        }
+        .contenedor-texto-imagen{
+            box-shadow: -10px -5px 40px #007dc5, 
+                        20px 0px 40px #a100f1,
+                        0 -5px 40px #007dc5,
+                        25px 10px 40px #8500c7;            
+
+            width: 60%;
+            margin: auto;
+            display: flex;
+            border-radius: 3%;
+            .texto{
+                color: white;
+                margin-left: 15px;
+                margin-top: 15px;
+                margin-right: 10px;
+                font-size: 17px;
+            }
+            .mi-foto{
+                height: 400px;
+                border-radius: 3%;
+                transition: 2s;
+                &:hover{
+                    transition: 2s;
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}

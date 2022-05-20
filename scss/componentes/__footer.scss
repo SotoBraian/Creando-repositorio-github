@@ -1,0 +1,59 @@
+.contenedor-footer{
+    height: 150px;
+    box-shadow: 0 0 25px #0ff, 0 0 15px white;
+    .titulo-redes-sociales{
+        font-size: 20px;
+        @include display (flex, center);
+        color: white;
+        margin-bottom: 40px;
+        padding: 10px;
+    }
+    .contenedor-redes{
+        width: 60%;
+        margin: auto;
+        @include display(flex, space-around);
+        .whatsapp{
+            background-color: rgb(77, 77, 77);
+            padding: 10px 10px;
+            font-size: 35px;
+            color: map-get($colores-footer, $key:color );
+            text-shadow: map-get($colores-footer , $key:text-shadow );
+            box-shadow: map-get($colores-footer , $key:box-shadow );
+            border-radius: 10%;
+            &:hover{
+                transform: scale(1.1);
+                box-shadow: 7px 7px 20px;
+                transition: 1s;
+            }
+        }
+        
+        .instagram{
+            background-color: rgb(77, 77, 77);
+            padding: 10px 10px;
+            font-size: 35px;
+            color: map-get($colores-footer, $key:color );
+            text-shadow: map-get($colores-footer , $key:text-shadow );
+            box-shadow: map-get($colores-footer , $key:box-shadow );
+            border-radius: 10%;
+            &:hover{
+                transform: scale(1.1);
+                box-shadow: 7px 7px 20px;
+                transition: 1s;
+            }
+        }
+        .twitter{
+            background-color: rgb(77, 77, 77);
+            padding: 10px 10px;
+            font-size: 35px;
+            color: map-get($colores-footer, $key:color );
+            text-shadow: map-get($colores-footer , $key:text-shadow );
+            box-shadow: map-get($colores-footer , $key:box-shadow );
+            border-radius: 10%;
+            &:hover{
+                transform: scale(1.1);
+                box-shadow: 7px 7px 20px;
+                transition: 1s;
+            }
+        }
+    }
+}

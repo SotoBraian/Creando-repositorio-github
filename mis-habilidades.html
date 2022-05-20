@@ -1,70 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta descrition -->
+    <meta name="description" content="Portafolio de desarrollador B.S Front end">
+    <!-- meta keywords -->
+    <meta name="keywords" content="habilidades programacion, front end, B.S, desarrollador web, desarrollador jr, html, css, javascript,angular">
+    <!-- open graph -->
+    <meta property:'og:type' content="web site">
+    <meta property:'og:type' content="Desarrollador Front end: Portafolio">
+    <!-- url -->
+    <meta property:'og:url' content="">
+    <!-- imagen -->
+    <meta property:'og:image' content="file:///C:/Users/SotoB/OneDrive/Desktop/programador%20frontend/html5/img/LogoMakr-0Gfq1h.png">
     <!-- logo -->
     <link rel="shortcut icon" href="imagenes/logo.jpg" type="image/x-icon">
     <!-- boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Mis Habilidades</title>
+    <title>Desarrollador Front end: Portafolio</title>
 </head>
-<body class="contenedor-grid">
+
+<body>
     <!-- navegacion -->
-    <header class="contenedor-nav">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-light color">
-            <div class="container-fluid contenedor-logo-menu">
-              <a class="navbar-brand" href="index.html">
-                  <img src="imagenes/logo.jpg" alt="logo" class="logo">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end contenedor-menu" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link" href="index.html">Inicio</a>
-                  <a class="nav-link" href="sobre-mi.html">Sobre Mi</a>
-                  <a class="nav-link" href="mis-habilidades.html">Mis Habilidades</a>
-                  <a class="nav-link" href="proyectos.html">Proyecto</a>
-                </div>
-              </div>
+    <header>
+        <nav class="contenedor-nav">
+            <div class="navegacion">
+                <a href="index.html">
+                    <img src="img/LogoMakr-0Gfq1h.png" alt="logo" class="logo">
+                </a>
+                <ul class="contenedor-menu">
+                    <li>
+                        <a href="index.html" class="inicio">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="sobre-mi.html" class="sobre-mi">Sobre Mi</a>
+                    </li>
+                    <li>
+                        <a href="mis-habilidades.html" class="mis-habilidades">Mis Habilidades</a>
+                    </li>
+                    <!-- <li>
+                        <a href="" class="contacto">Contancto</a>
+                    </li> -->
+                </ul>
             </div>
         </nav>
     </header>
     <main>
-        <section class="contenedor-mis-habilidades-b">
-            <h1 class="mis-habilidades-b">Mis Habilidades</h1>
-            <div>
-                <h2 class="titulo-html-b">Html</h2>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 99%;" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div> 
-            <br>   
-            <div>
-                <h2 class="titulo-css-b">Css</h2>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
+        <!-- mis habilidades -->
+        <!-- html -->
+        <section>
+            <div class="contenedor-titulo-mis-habilidades">
+                <h1 class="titulo-mis-habilidades">Mis Habilidades</h2>
             </div>
-            <br>
-            <div>
-                <h2 class="titulo-javascript-b">Javascript</h2>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="contenedor-mis-habilidades">
+                <div class="contenedor-card">
+                    <div class="contenedor-a">
+                        <div class="imagen">
+                            <img src="img/html.png" alt="html" class="imagenes">
+                        </div>
+                    </div>
+                    <div class="contenedor-b">
+                        <div class="texto-html">
+                            <p class="texto">Conocimiento completo de Html</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <br>
-            <div>
-                <h2 class="titulo-angular-b">Angular</h2>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                <!-- javascript -->
+                <div class="contenedor-card">
+                    <div class="contenedor-a">
+                        <div class="imagen">
+                            <img src="img/javascript.png" alt="javascript" class="imagenes">
+                        </div>
+                    </div>
+                    <div class="contenedor-b">
+                        <div class="texto-html">
+                            <p class="texto">Conocimiento completo de Html</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- css -->
+                <div class="contenedor-card">
+                    <div class="contenedor-a">
+                        <div class="imagen">
+                            <img src="img/css.png" alt="css" class="imagenes">
+                        </div>
+                    </div>
+                    <div class="contenedor-b">
+                        <div class="texto-html">
+                            <p class="texto">Conocimiento completo de Html</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- angular -->
+                <div class="contenedor-card">
+                    <div class="contenedor-a">
+                        <div class="imagen">
+                            <img src="img/angular.png" alt="angular" class="imagenes">
+                        </div>
+                    </div>
+                    <div class="contenedor-b">
+                        <div class="texto-html">
+                            <p class="texto">Conocimiento completo de Html</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -73,18 +120,15 @@
     <footer class="contenedor-footer">
         <h3 class="titulo-redes-sociales">Redes Sociales</h3>
         <div class="contenedor-redes">
-            <a href="https://wa.me/541122948439" target="_blanck">
-                <img src="imagenes/whatsapp.png" alt="whatsapp" class="whatsapp">
-            </a>
-            <a href="https://www.instagram.com/soto_braian_/" target="_blanck">
-                <img src="imagenes/instagram.png" alt="instagram" class="instagram">
-            </a>
-            <a href="https://twitter.com/Braian34409221?t=QmSFfVSSw5HLrFpmr4dBag&s=09" target="_blanck">
-                <img src="imagenes/twitter.png" alt="twitter" class="twitter">
-            </a>
-            <a href="https://t.me/Braian_S_M" target="_blanck">
-                <img src="imagenes/telegram.png" alt="telegram" class="telegram">
-            </a>
+                <a href="https://wa.me/541122948439" target="_blanck">
+                    <i class="fa fa-whatsapp whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com/soto_braian_/" target="_blank">
+                    <i class="fa fa-instagram instagram"></i>
+                </a>
+                <a href="https://twitter.com/Braian34409221?t=QmSFfVSSw5HLrFpmr4dBag&s=09" target="_blanck">
+                    <i class="fa fa-twitter twitter"></i>
+                </a>
         </div>
     </footer>
     <!----- script js------>
@@ -94,13 +138,11 @@
         AOS.init();
     </script>
     <!-- boostrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-        crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-        crossorigin="anonymous">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
 </body>
 </html>

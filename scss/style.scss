@@ -1,18 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
+body{
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/papyrus-dark.png);
 }
-
-body {
-    background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/vintage-wallpaper.png);
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-columns: 1fr, 1fr, 1fr;
-}
-@import "../scss/componentes-index/_header";
-@import "../scss/componentes-index/_portada";
-@import "../scss/componentes-index/_sobre-mi";
-@import "../scss/componentes-index/_mis-habilidades";
-@import "../scss/componentes-index/_contacto";
-@import "../scss/componentes-index/_footer";
-@import "../scss/base/_variables";
+@import "../scss/componentes/header";
+@import "../scss/componentes/portada";
+@import "../scss/componentes/sobre-mi";
+@import "../scss/componentes/mis-habilidades";
+@import "../scss/componentes/footer";
+@import "../scss/base/mapas";
+@import "../scss/base/extend";
+@import "../scss/base/mixin";
