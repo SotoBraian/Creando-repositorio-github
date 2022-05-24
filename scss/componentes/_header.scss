@@ -1,80 +1,54 @@
 @import "../base/mapas";
 @import "../base/mixin";
-header{
-    width: 100%;
+.contenedor-nav{
     box-shadow: 0 0 40px #007dc5;
     height: 70px;
     position: sticky;
     top:0;
     z-index: 2;
-    .contenedor-nav{
+    .navegacion{
         width: 80%;
         margin: auto;
-        .navegacion{  
-            justify-content: space-between;
-            @extend %display;
-            a{
-                .logo{
-                    padding: 5px 5px;
-                    background-color: black;
-                    height: 80px;
-                }
+        .contenedor-logo{
+            .logo{
+                margin-top: -15px;
+                padding: 5px 5px;
+                background-color: black;
+                height: 80px;
             }
+        }
+        .navbar-toggler{
+            border: solid 2px #007dc5;
+            background-color: rgba(255, 255, 255, 0.308);
+           @media screen and (max-width:992px) {
+               background-color: #007dc557;
+           }
+        }
+        .contenedor-menu-principal{
             .contenedor-menu{
-                width: 45%;
-                @include display (flex,space-between);
+                width: 100%;
+                margin-top:-25px;
+                display: flex;
+                justify-content: flex-end;
+                @media screen and (max-width:992px) {
+                    margin-top: 30px;
+                    width: 25%;
+                }
                 li{
-                    list-style: none;
-                    .inicio{
-                        color: white;
-                        transition: 1.5s;
-                        padding: 5px 10px;
-                        text-decoration: none;
-                        &:hover{
-                            color: map-get($navegacion , color );
-                            transition: map-get($navegacion , $key:transition);
-                            box-shadow: map-get($navegacion , $key:box-shadow );
-                            text-shadow: map-get($navegacion , $key:text-shadow );
-                        }
-                    }
-                    .sobre-mi{
-                        padding: 5px 10px;
-                        text-decoration: none;
-                        transition: 1.5s;
-                        color: white;
-                        &:hover{
-                            color: map-get($navegacion , color );
-                            transition: map-get($navegacion , $key:transition);
-                            box-shadow: map-get($navegacion , $key:box-shadow );
-                            text-shadow: map-get($navegacion , $key:text-shadow );
-                        }
-                    }
-                    .mis-habilidades{
+                    .menu{
                         color: white;
                         padding: 5px 10px;
                         transition: 1.5s;
                         text-decoration: none;
                         &:hover{
-                            color: map-get($navegacion , color );
-                            transition: map-get($navegacion , $key:transition);
-                            box-shadow: map-get($navegacion , $key:box-shadow );
-                            text-shadow: map-get($navegacion , $key:text-shadow );
-                        }
-                    }
-                    .contacto{
-                        color: white;
-                        transition: 1.5s;
-                        padding: 5px 10px;
-                        text-decoration: none;
-                        &:hover{
-                            color: map-get($navegacion , color );
-                            transition: map-get($navegacion , $key:transition);
-                            box-shadow: map-get($navegacion , $key:box-shadow );
-                            text-shadow: map-get($navegacion , $key:text-shadow );
+                            color: #008ee0;
+                            transition: 1.5s;
+                            box-shadow: 0 0 15px  #008ee0;
+                            text-shadow: 0 0 15px #008ee0; 
                         }
                     }
                 }
             }
-        }    
+        }
     }
 }

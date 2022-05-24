@@ -6,6 +6,10 @@ section{
             font-size: 50px;
             margin-top: 130px;
             margin-bottom: 100px;
+            @media screen and (min-width:576px) and (max-width:768px){
+                margin-top: 60px;
+                font-size: 50px;
+            }
         }
         .contenedor-texto-imagen{
             box-shadow: -10px -5px 40px #007dc5, 
@@ -17,12 +21,19 @@ section{
             margin: auto;
             display: flex;
             border-radius: 3%;
+            @media screen and (min-width:576px) and (max-width:768px){
+                display: flex;
+                flex-direction: column;
+            }
             .texto{
                 color: white;
                 margin-left: 15px;
                 margin-top: 15px;
                 margin-right: 10px;
                 font-size: 17px;
+                @media screen and (min-width:576px) and (max-width:768px){
+                    font-size: 25px;
+                }
             }
             .mi-foto{
                 height: 400px;
@@ -31,6 +42,9 @@ section{
                 &:hover{
                     transition: 2s;
                     transform: scale(1.2);
+                }
+                @media screen and (min-width:576px) and (max-width:768px){
+                    height: 500px;
                 }
             }
         }

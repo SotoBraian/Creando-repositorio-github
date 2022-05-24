@@ -10,12 +10,12 @@
     <!-- meta keywords -->
     <meta name="keywords" content="programacion, front end, B.S, desarrollador web, desarrollador jr, mis historia de inicio en la programacion">
     <!-- open graph -->
-    <meta property:'og:type' content="web site">
-    <meta property:'og:type' content="Desarrollador Front end: Portafolio">
+    <meta property='og:type' content="web site">
+    <meta property='og:type' content="Desarrollador Front end: Portafolio">
     <!-- url -->
-    <meta property:'og:url' content="">
+    <meta property='og:url' content="">
     <!-- imagen -->
-    <meta property:'og:image' content="file:///C:/Users/SotoB/OneDrive/Desktop/programador%20frontend/html5/img/LogoMakr-0Gfq1h.png">
+    <meta property='og:image' content="file:///C:/Users/SotoB/OneDrive/Desktop/programador%20frontend/html5/img/LogoMakr-0Gfq1h.png">
     <!-- logo -->
     <link rel="shortcut icon" href="img/LogoMakr-0Gfq1h.png" type="image/x-icon">
     <!-- boostrap -->
@@ -32,32 +32,37 @@
 <body>
     <!-- navegacion -->
     <header>
-        <nav class="contenedor-nav">
-            <div class="navegacion">
-                <a href="index.html">
-                    <img src="img/LogoMakr-0Gfq1h.png" alt="logo" class="logo">
-                </a>
-                <ul class="contenedor-menu">
-                    <li>
-                        <a href="index.html" class="inicio">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="" class="sobre-mi">Sobre Mi</a>
-                    </li>
-                    <li>
-                        <a href="mis-habilidades.html" class="mis-habilidades">Mis Habilidades</a>
-                    </li>
-                    <li>
-                        <a href="contacto.html" class="contacto">Contancto</a>
-                    </li>
+        <nav class="navbar navbar-expand-lg  contenedor-nav">
+            <div class="container-fluid navegacion">
+              <a class="navbar-brand contenedor-logo" href="#">
+                  <img src="img/LogoMakr-0Gfq1h.png" alt="logo" class="logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse contenedor-menu-principal" id="navbarNav">
+                <ul class="navbar-nav contenedor-menu">
+                  <li class="nav-item ">
+                    <a class="nav-link menu" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menu" href="sobre-mi.html">Sobre Mi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menu" href="mis-habilidades.html">Mis Habilidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menu" href="contacto.html">Contacto</a>
+                  </li>
                 </ul>
+              </div>
             </div>
-        </nav>
+          </nav>
     </header>
     <!-- Sobre mi -->
     <section>
         <div class="contenedor-sobre-mi-b">
-            <h1 class="titulo-sobre-mi-b">Sobre Mi</h2>
+            <h1 class="titulo-sobre-mi-b">Sobre Mi</h1>
             <div class="contenedor-texto-imagen-b" data-aos="zoom-out" data-aos-duration="1500">
                 <p class="texto-b">
                     Me llamo Braian Soto, naci en la Provincia de Buenos Aires.

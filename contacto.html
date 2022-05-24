@@ -10,12 +10,12 @@
     <!-- meta keywords -->
     <meta name="keywords" content="programacion, front end, B.S, desarrollador web, desarrollador jr, mis historia de inicio en la programacion">
     <!-- open graph -->
-    <meta property:'og:type' content="web site">
-    <meta property:'og:type' content="Desarrollador Front end: Portafolio">
+    <meta property='og:type' content="web site">
+    <meta property='og:type' content="Desarrollador Front end: Portafolio">
     <!-- url -->
-    <meta property:'og:url' content="">
+    <meta property='og:url' content="">
     <!-- imagen -->
-    <meta property:'og:image' content="file:///C:/Users/SotoB/OneDrive/Desktop/programador%20frontend/html5/img/LogoMakr-0Gfq1h.png">
+    <meta property='og:image' content="file:///C:/Users/SotoB/OneDrive/Desktop/programador%20frontend/html5/img/LogoMakr-0Gfq1h.png">
     <!-- logo -->
     <link rel="shortcut icon" href="img/LogoMakr-0Gfq1h.png" type="image/x-icon">
     <!-- boostrap -->
@@ -32,48 +32,56 @@
 <body>
     <!-- navegacion -->
     <header>
-        <nav class="contenedor-nav">
-            <div class="navegacion">
-                <a href="index.html">
-                    <img src="img/LogoMakr-0Gfq1h.png" alt="logo" class="logo">
-                </a>
-                <ul class="contenedor-menu">
-                    <li>
-                        <a href="index.html" class="inicio">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="" class="sobre-mi">Sobre Mi</a>
-                    </li>
-                    <li>
-                        <a href="mis-habilidades.html" class="mis-habilidades">Mis Habilidades</a>
-                    </li>
-                    <li>
-                        <a href="contacto.html" class="contacto">Contancto</a>
-                    </li>
+        <nav class="navbar navbar-expand-lg  contenedor-nav">
+            <div class="container-fluid navegacion">
+              <a class="navbar-brand contenedor-logo" href="#">
+                  <img src="img/LogoMakr-0Gfq1h.png" alt="logo" class="logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse contenedor-menu-principal" id="navbarNav">
+                <ul class="navbar-nav contenedor-menu">
+                  <li class="nav-item ">
+                    <a class="nav-link menu" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menu" href="sobre-mi.html">Sobre Mi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menu" href="mis-habilidades.html">Mis Habilidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menu" href="contacto.html">Contacto</a>
+                  </li>
                 </ul>
+              </div>
             </div>
-        </nav>
+          </nav>
     </header>
     <!-- Contacto -->
     <main>
         <section>
-            <h1>Contacto</h1>
+          <h1 class="titulo-contacto">Contacto</h1>
+          <div class="contenedor-contacto">
             <div>
-                <label for="nombre">Nombre</label>
-                <input type="text" placeholder="Braian S.">
-                <br>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Developer@gmail.com">
-                <br>
-                <label for="comentario">Comentario</label>
-                <br>
-                <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Escribe un comentario..."></textarea>
-                <br>
-                <input type="submit" placeholder="Enviar">
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9281.761634607785!2d-58.73032485065968!3d-34.66484648533994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbfe512e98f8d%3A0x950e9e8e55106572!2sMerlo!5e0!3m2!1ses-419!2sar!4v1653369852156!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+              <label for="nombre" class="nombre">Nombre</label>
+              <input type="text" placeholder="Braian S.">
+              <br>
+              <label for="email" class="nombre">Email</label>
+              <br>
+              <input type="email" name="email" id="email" placeholder="Developer@gmail.com">
+              <br>
+              <label for="comentario" class="nombre">Comentario</label>
+              <br>
+              <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Escribe un comentario..."></textarea>
+              <br>
+              <input type="submit" placeholder="Enviar">
             </div>
+            <div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9281.761634607785!2d-58.73032485065968!3d-34.66484648533994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbfe512e98f8d%3A0x950e9e8e55106572!2sMerlo!5e0!3m2!1ses-419!2sar!4v1653369852156!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
         </section>
     </main>
     <!-- pie de pagina -->

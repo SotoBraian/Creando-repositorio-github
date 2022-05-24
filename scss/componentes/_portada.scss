@@ -17,12 +17,18 @@
             display: flex;
             align-items: flex-start;
             text-shadow: map-get($titulo-principal, $key:text-shadow );
+            @media screen and (min-width:576px) and (max-width:768px){
+                font-size: 50px;
+            }
         }
         .titulo-b{
             font-size: 60px;
             color: white;
             transition: 1.5s;
             text-shadow: 5px 3px 8px #adadad;
+            @media screen and (min-width:576px) and (max-width:768px){
+                font-size: 50px;
+            }
         }
         .titulo-c{
             font-size: 50px;
@@ -30,6 +36,9 @@
             display: flex;
             align-items: flex-end;
             text-shadow: map-get($titulo-principal , $key:color );
+            @media screen and (min-width:576px) and (max-width:768px){
+                font-size: 50px;
+            }
         }
     }
 }

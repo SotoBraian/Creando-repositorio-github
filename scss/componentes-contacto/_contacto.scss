@@ -1,0 +1,36 @@
+.titulo-contacto{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+    margin-top: 50px;
+}
+.contenedor-contacto{
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-bottom: 50px;
+    @media screen and (min-width:576px) and (max-width:768px){
+        display: flex;
+        flex-direction: column;
+    }
+    div{
+        .nombre{
+            color: white;
+        }
+        input{
+            box-shadow: 0 0 15px #007dc5;
+        }
+        textarea{
+            box-shadow: 0 0 25px #007dc5;
+        }
+    }
+    div{
+        iframe{
+            box-shadow: 0 0 25px #007dc5;
+        }
+    }
+}
