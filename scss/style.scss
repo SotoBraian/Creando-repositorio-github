@@ -1,7 +1,7 @@
 body{
     background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/papyrus-dark.png);
 }
-@import "../scss/componentes/header";
+@import "../scss/componentes/_header";
 @import "../scss/componentes/portada";
 @import "../scss/componentes/sobre-mi";
 @import "../scss/componentes/mis-habilidades";
@@ -9,3 +9,9 @@ body{
 @import "../scss/base/mapas";
 @import "../scss/base/extend";
 @import "../scss/base/mixin";
+
+// html-sobre-mi
+@import "../scss/componentes-sobre-mi/contenido";
+
+// html-mis-habilidades
+@import "../scss/componentes-mis-habilidades/contenido-mis-habilidades";
