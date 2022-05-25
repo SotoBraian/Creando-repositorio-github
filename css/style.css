@@ -5,12 +5,13 @@ body {
 .contenedor-nav {
   box-shadow: 0 0 40px #007dc5;
   height: 70px;
-  position: sticky;
   top: 0;
   z-index: 2;
 }
 .contenedor-nav .navegacion {
   width: 80%;
+  position: sticky;
+  top: 0;
   margin: auto;
 }
 .contenedor-nav .navegacion .contenedor-logo .logo {
